@@ -1,0 +1,58 @@
+
+programa de teste
+nome: testeula.ula
+data: 05/04/2023
+versão: 0.1
+
+saida esperada: "450 cb1 a32 c43 124 785 9b6 cd7 fe8 649 d9a fcb 63c 98d 76e 23f "
+
+inicio:
+    X=4;
+    Y=5;
+    W=An;
+    X=12;
+    Y=11;
+    W=Bn;
+    X=10;
+    Y=3;
+    W=umL;
+    X=12;
+    Y=4;
+    W=zeroL;
+    X=1;
+    Y=2;
+    W=nAeB;
+    X=7;
+    Y=8;
+    W=nAoB;
+    X=9;
+    Y=11;
+    W=AxB;
+    X=12;
+    Y=13;
+    W=AeBn;
+    X=15;
+    Y=14;
+    W=AnoB;
+    X=6;
+    Y=4;
+    W=nAxB;
+    X=13;
+    Y=9;
+    W=AoB;
+    X=15;
+    Y=12;
+    W=AeB;
+    X=6;
+    Y=3;
+    W=AneB;
+    X=9;
+    Y=8;
+    W=AoBn;
+    X=7;
+    Y=6;
+    W=copiaB;
+    X=2;
+    Y=3;
+    W=copiaA;
+fim.

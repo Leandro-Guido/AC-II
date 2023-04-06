@@ -64,6 +64,9 @@ o codigo para a instrução desejada.
 ```
 
 ## **[O Programa no Arduino](programaArduino.ino)**
+
+Acesso para a simulação no TinkerCad: https://www.tinkercad.com/things/3AbwgcY2ojF
+
 O programa no Arduino que utiliza a entrada serial para receber as entradas necessárias 
 ao funcionamento da ULA (arquivo .hex) e as saídas são 4 Leds ligados aos pinos 13, 12, 11 e 10 (o 
 bit mais significativo no pino 13 e o menos significativo no pino 10).

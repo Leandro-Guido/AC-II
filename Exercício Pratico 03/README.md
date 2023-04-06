@@ -6,7 +6,7 @@ interface com o usuário. A ideia é ler um programa escrito pelo usuário, tran
 outro programa e finalmente passá-lo ao Hardware externo. O resultado será observado nos 4 Leds conectados no 
 Hardware externo.
 
-## **Software no PC**
+## **[Software no PC](CEP03.java)**
 
 O software no PC foi escrito em Java.
 
@@ -63,7 +63,7 @@ o codigo para a instrução desejada.
 450 cb1
 ```
 
-## **O Programa no Arduino**
+## **[O Programa no Arduino](programaArduino.ino)**
 O programa no Arduino que utiliza a entrada serial para receber as entradas necessárias 
 ao funcionamento da ULA (arquivo .hex) e as saídas são 4 Leds ligados aos pinos 13, 12, 11 e 10 (o 
 bit mais significativo no pino 13 e o menos significativo no pino 10).

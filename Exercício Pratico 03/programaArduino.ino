@@ -2,6 +2,7 @@
 #include <string.h>
 
 #define DELAY 1000
+#define SEPARADOR ' '
 
 // ----------------------- Constantes globais
 
@@ -104,7 +105,7 @@ void setup() {
   
   int CC = 4;// controle da carga
   do{
-    instrucao = Serial.readStringUntil(' ');
+    instrucao = Serial.readStringUntil(SEPARADOR);
     if(valida(instrucao)){
    	  if(CC < 100) {
         mem[CC] = (short)strtol(instrucao.c_str(), nullptr, 16);

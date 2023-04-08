@@ -40,9 +40,11 @@ import java.io.RandomAccessFile;
  *           - o que for digitado antes de "inicio:" e depois de "fim." será desconsiderado
  * 
  * autores: - Leandro Guido Lorenzini Santos
- *          - 
- *          - 
- *          - 
+ *          - Samuel Luiz da Cunha Viana Cruz 
+ *          - Henrique De Almeida Diniz
+ *          - Marcelo Augusto Moreira Gomes
+ *          - Luiz Henrique Motta Dias
+ * 
  * data   : 03/04/2023
  * versão : v0.1
  * </pre>
@@ -124,7 +126,6 @@ class CEP03 {
             if(buffer == '\n') linha++;
          // se o caractere for 'i', comeca a ler do arquivo e comparar com a palavra "inicio:"
             if(buffer == 'i') {
-                possivelInicio = programa.getFilePointer() - 1; 
              // se a repetição acabar e encontrou == true, é porque a palavra "inicio:" foi encontrada
              // caso encontre um char que não satisfaça as condições, retorna o apontador do arquivo para o ultimo 'i' lido e volta a fazer a repetição superior
                 for (int j = 1; j < inicio.length(); j++) {
@@ -135,7 +136,8 @@ class CEP03 {
                     if(buffer == inicio.charAt(j)) {
                         encontrou = true;
                     } else {
-                        programa.seek(possivelInicio); /* voltar para a ultima letra 'i' encontrada na leitura */
+                        if(possivelInicio != -1)
+                            programa.seek(possivelInicio); /* voltar para a ultima letra 'i' encontrada na leitura */
                         encontrou = false;
                         j = inicio.length();
                     } // end if
@@ -248,7 +250,7 @@ class CEP03 {
         do {
          // fazendo leituras de comandos
          // comando => string, sem espaços em branco finalizda por '.' ou ';'
-            comando = lerComandoDoPrograma(programa);
+            comando = lerComandoDoPrograma(programa); // X=13; Y=3; W=CopiaB; fim.
             switch(comando.charAt(0)) {
              // caso o comando seja atribuição de um valor para X
                 case 'X':   X = getValor(comando); break;

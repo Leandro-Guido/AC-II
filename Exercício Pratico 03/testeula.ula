@@ -8,6 +8,7 @@ saida esperada: "450 cb1 a32 c43 124 785 9b6 cd7 fe8 649 d9a fcb 63c 98d 76e 23f
 
 inicio:
     X=4;
+    Y=3;
     Y=5;
     W=An;
     X=12;
